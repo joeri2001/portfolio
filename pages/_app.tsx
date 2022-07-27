@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { ThemeProvider } from "next-themes";
-import Navbar from "../components/navbar";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -11,7 +10,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Navbar />
       <Component {...pageProps} />
     </ThemeProvider>
   );
